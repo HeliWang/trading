@@ -1,0 +1,4 @@
+PYTHONPATH=$PYTHONPATH:/home/uzak/sandbox:/home/uzak/sandbox/trading/trunk
+WORKDIR=/home/uzak/t
+# m h  dom mon dow   command
+0 4 * * * (cd $WORKDIR; /usr/bin/python $WORKDIR/tools/fetch.py -a | /bin/sh)
